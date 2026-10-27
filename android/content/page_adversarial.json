@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "pageId": "page_adversarial",
+  "width": 1024,
+  "height": 1024,
+  "closingPx": 9,
+  "fillableMaxAreaPct": 40.0,
+  "regions": [
+    {"id": 2, "areaPx": 491401, "bbox": [162, 162, 701, 701], "fillable": false},
+    {"id": 4, "areaPx": 11289, "bbox": [870, 870, 121, 121], "fillable": true}
+  ]
+}

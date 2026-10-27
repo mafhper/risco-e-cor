@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "pageId": "page_poc",
+  "width": 1024,
+  "height": 1024,
+  "closingPx": 9,
+  "fillableMaxAreaPct": 40.0,
+  "regions": [
+    {"id": 2, "areaPx": 20081, "bbox": [120, 60, 161, 161], "fillable": true},
+    {"id": 3, "areaPx": 25521, "bbox": [110, 310, 181, 141], "fillable": true},
+    {"id": 4, "areaPx": 70681, "bbox": [50, 470, 301, 301], "fillable": true},
+    {"id": 5, "areaPx": 20201, "bbox": [100, 780, 201, 201], "fillable": true},
+    {"id": 6, "areaPx": 264189, "bbox": [440, 222, 581, 581], "fillable": true},
+    {"id": 7, "areaPx": 67821, "bbox": [490, 50, 481, 141], "fillable": true},
+    {"id": 8, "areaPx": 25445, "bbox": [640, 840, 181, 181], "fillable": true},
+    {"id": 9, "areaPx": 9941, "bbox": [880, 860, 141, 141], "fillable": true}
+  ]
+}

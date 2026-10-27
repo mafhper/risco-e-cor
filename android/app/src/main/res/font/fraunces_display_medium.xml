@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- O mesmo display em 500, que e o peso dos titulos de tela do mockup. -->
+<font-family xmlns:android="http://schemas.android.com/apk/res/android">
+    <font
+        android:font="@font/fraunces"
+        android:fontStyle="normal"
+        android:fontVariationSettings="'wght' 500, 'SOFT' 60, 'WONK' 0, 'opsz' 24"
+        android:fontWeight="500" />
+</font-family>
+

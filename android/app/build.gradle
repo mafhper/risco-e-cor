@@ -1,0 +1,56 @@
+apply plugin: 'com.android.application'
+
+android {
+    namespace = 'com.theomaria.draw'
+    compileSdk = rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+        applicationId 'com.theomaria.draw'
+        minSdk = rootProject.ext.minSdkVersion
+        targetSdk = rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName '0.1.0-mvp0'
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    // O conteudo (pagina para colorir) vem de content/ (gerado por :testkit:generateContent).
+    sourceSets {
+        main {
+            assets.srcDirs += [rootProject.file('content')]
+        }
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+        }
+        release {
+            minifyEnabled false
+        }
+    }
+
+    lint {
+        abortOnError = true
+    }
+
+    testOptions {
+        unitTests.includeAndroidResources = true
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
+
+dependencies {
+    implementation project(':core:fill')
+    implementation project(':core:doc')
+
+    // Teste de fluxo na JVM (sem aparelho). Não entra no APK.
+    testImplementation "junit:junit:${rootProject.ext.junitVersion}"
+    testImplementation 'org.robolectric:robolectric:4.17'
+}

@@ -1,0 +1,18 @@
+// App real (MVP-0). Java puro, zero androidx.
+// Toolchain: Gradle 9.8.1 (wrapper) + AGP 9.4.1.
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:9.4.1'
+    }
+}
+
+ext {
+    compileSdkVersion = 37
+    targetSdkVersion = 36
+    minSdkVersion = 29
+    junitVersion = '4.13.2'
+}

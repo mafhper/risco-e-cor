@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Meu Desenho</string>
+
+    <!-- Home -->
+    <string name="home_wordmark">ateliê</string>
+    <string name="settings">Configurações</string>
+    <string name="profiles">Perfis</string>
+    <string name="mural_family">Mural da família</string>
+    <string name="mural_empty_title">A parede ainda está vazia</string>
+    <string name="mural_empty_body">Entre em um perfil e publique a primeira peça.</string>
+    <string name="piece_singular">peça</string>
+    <string name="piece_plural">peças</string>
+    <string name="enter_profile">Entrar no perfil de %1$s</string>
+    <string name="new_piece">Nova peça</string>
+    <string name="who_draws">Com quem vamos desenhar?</string>
+
+    <!-- Perfil -->
+    <string name="back">Voltar</string>
+    <string name="repertoire">Repertório</string>
+    <string name="favorite_colors">Cores favoritas</string>
+    <string name="create_with">Criar com %1$s</string>
+    <string name="start_drawing">Começar a desenhar</string>
+    <string name="my_drawings">Meus desenhos</string>
+    <string name="recent_of">Recentes de %1$s</string>
+    <string name="in_mural">No mural</string>
+    <string name="scope_mine">Só meus</string>
+    <string name="scope_all">Todos</string>
+    <string name="mural_mine_empty">Nada publicado ainda — crie e publique um desenho.</string>
+    <string name="mural_all_empty">Nada no mural da família ainda.</string>
+    <string name="switch_profile_hint">Trocar de perfil é só na Home — os desenhos ficam guardados.</string>
+    <string name="profile_settings">Perfil</string>
+
+    <!-- Criar -->
+    <string name="create_title">Nova peça</string>
+    <string name="create_body">O mesmo estúdio — com ou sem o contorno por baixo.</string>
+    <string name="blank_sheet">Folha em branco</string>
+    <string name="color_page">Página para colorir</string>
+    <plurals name="color_page_hint">
+        <item quantity="one">%d contorno para pintar</item>
+        <item quantity="other">%d contornos para pintar</item>
+    </plurals>
+
+    <!-- Canvas -->
+    <string name="tool_pencil">Lápis</string>
+    <string name="tool_crayon">Ceras</string>
+    <string name="tool_fill">Balde</string>
+    <string name="tool_eraser">Borracha</string>
+    <string name="undo">Desfazer</string>
+    <string name="redo">Refazer</string>
+    <string name="save">guardar</string>
+    <string name="save_done">Feito</string>
+    <string name="collapse">Recolher painel</string>
+    <string name="expand">Expandir painel</string>
+    <string name="toolbar">Barra de ferramentas</string>
+    <string name="quick_colors">Cores rápidas</string>
+    <string name="size">Tamanho</string>
+    <string name="size_small">Fino</string>
+    <string name="size_medium">Médio</string>
+    <string name="size_large">Grosso</string>
+    <string name="tool_preview">Ferramenta atual</string>
+    <string name="color_preview">Cor atual</string>
+    <string name="switch_tool">Trocar ferramenta</string>
+    <string name="change_color">Trocar cor</string>
+    <string name="save_action">Guardar</string>
+    <string name="done">feito</string>
+    <string name="free_drawing">Desenho livre</string>
+    <string name="zoom_in">Aumentar zoom</string>
+    <string name="zoom_out">Diminuir zoom</string>
+    <string name="zoom_fit">Ajustar à tela</string>
+    <string name="zoom_readout">Zoom</string>
+    <string name="palette_spectrum">Espectro de cores</string>
+    <string name="palette_family">Família</string>
+    <string name="palette_steps">Variações</string>
+    <string name="palette_neutrals">Neutros</string>
+
+    <!-- Guardar -->
+    <string name="save_title">Guardar o desenho?</string>
+    <string name="save_body">Publicar coloca a peça no mural da família. Guardar mantém só na sua galeria.</string>
+    <string name="publish">Publicar no mural</string>
+    <string name="keep_draft">Guardar rascunho</string>
+    <string name="keep_drawing">Continuar desenhando</string>
+    <string name="publish_hint">Aparece para a família</string>
+    <string name="draft_hint">Só você vê</string>
+    <string name="continue_hint">Volta para o papel</string>
+
+    <!-- Galeria / visualizar -->
+    <string name="gallery_title">Meus desenhos</string>
+    <string name="gallery_empty_title">Nenhum desenho ainda</string>
+    <string name="gallery_empty_body">Comece por uma folha em branco ou por uma página para colorir.</string>
+    <string name="draft_badge">Rascunho</string>
+    <string name="published_badge">No mural</string>
+    <string name="open_piece">Abrir peça</string>
+    <string name="discard_draft">Apagar rascunho</string>
+    <string name="discarded">Rascunho apagado</string>
+    <string name="undo_action">Desfazer</string>
+    <string name="discarded_restored">Rascunho restaurado</string>
+    <string name="empty_sheet_discarded">Folha vazia descartada</string>
+
+    <!-- Configurações -->
+    <string name="theme">Tema</string>
+    <string name="theme_light">Claro</string>
+    <string name="theme_dark">Escuro</string>
+    <string name="theme_system">Seguir aparelho</string>
+    <string name="about">Sobre</string>
+    <string name="offline_note">Funciona sem internet, sem conta e sem anúncios.</string>
+    <string name="version_label">Versão %1$s</string>
+    <string name="profiles_count">%1$d de %2$d perfis</string>
+    <string name="profiles_capacity_hint">O app acomoda até quatro perfis. A criação de perfis entra na próxima fase.</string>
+</resources>

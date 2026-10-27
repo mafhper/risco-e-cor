@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Chaves de tag usadas em runtime (nao ha ids de layout neste app). -->
+<resources>
+    <!-- Marca uma superficie clicavel que NAO recebe press scale (HUD do canvas, scrim). -->
+    <item name="tag_press" type="id" />
+</resources>

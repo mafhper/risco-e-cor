@@ -1,0 +1,7 @@
+.gradle/
+build/
+local.properties
+# Evidência local de smoke (não é fonte)
+.dev-evidence/
+.build-*.log
+legacy/
