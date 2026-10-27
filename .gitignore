@@ -1,0 +1,34 @@
+# Dependências
+node_modules/
+**/node_modules/
+
+# Gradle / Android
+.gradle/
+**/.gradle/
+build/
+**/build/
+local.properties
+*.keystore
+*.jks
+
+# Saídas de build e ferramentas
+.output/
+.wrangler/
+dist/
+**/dist/
+
+# Ambiente
+.env
+.env.*
+
+# Evidências e artefatos de verificação local
+**/.chrome-*/
+**/.dev-evidence/
+**/.dev-artifacts/
+
+# Logs
+*.log
+**/*.log
+
+# Workspace privado de desenvolvimento (nunca versionado)
+**/.dev/
