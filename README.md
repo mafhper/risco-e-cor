@@ -9,7 +9,7 @@ Pré-MVP. O projeto está em desenvolvimento e reúne duas partes:
 - `android/` — o app Android.
 - `mockup/` — um protótipo web, usado para explorar a interface antes de levar as telas para o app.
 
-Nenhuma das duas partes está pronta para uso. As pastas chegam ao repositório conforme a migração do protótipo avança; os comandos abaixo valem a partir daí.
+Nenhuma das duas partes está pronta para uso.
 
 ## Como rodar
 
