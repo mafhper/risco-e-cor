@@ -7,7 +7,7 @@
 //   4. paper   the desk is the whole canvas; the page is inset with a frame
 //
 // jsdom has no layout, so the pixel proof (page inside the desk, frame drawn)
-// is the CDP pass in `.dev-artifacts/page-desk/`; here the shapes that make it
+// is the recorded CDP pass; here the shapes that make it
 // possible.
 import { cleanup, fireEvent, render, screen } from "@testing-library/react";
 import { useEffect } from "react";

@@ -13,19 +13,19 @@ export type AgeBand = "3-5" | "6-8" | "9+";
 export type UiMode = "kids" | "pro";
 
 /**
- * ADR-001, amended by the owner (24/10): the 3-5 studio keeps the three named
- * objects and gains two more drawing materials, because one material is not a
- * choice — "o Theo só tem lápis". The row is five targets and one screen wide:
+ * The 3-5 studio keeps the three named objects and adds two more drawing
+ * materials, because one material is not a choice — "o Theo só tem lápis".
+ * The row is five targets and one screen wide:
  *
- *   `crayon`  Lápis de Cera     — the everyday tool, thick and forgiving
- *   `marker`  Canetinha         — a bold, even line; the second thing every child grabs
- *   `brush`   Pincel            — a wet stroke, wider than the hand
- *   `fill`    Balde Mágico      — tap-to-fill, only over a coloring page
- *   `eraser`  Borracha de Bloco — takes the area of its circle, never a smudge
+ *   `crayon`  Giz de cera — the everyday tool, thick and forgiving
+ *   `marker`  Marcador    — a bold, even line; the second thing every child grabs
+ *   `brush`   Pincel      — a wet stroke, wider than the hand
+ *   `fill`    Pintar      — tap-to-fill, on a page or on blank paper
+ *   `eraser`  Borracha    — takes the area of its circle, never a smudge
  *
- * The rest of the shelf (pencil, watercolor, oil, charcoal/spray) stays Pro:
- * it is not hidden by accident, the age band decides — and the kids skin still
- * never shows functional text.
+ * The rest of the shelf (pencil, watercolor, oil, charcoal/spray) stays behind
+ * the complex-tools capability, off by default for 3-5 — the age band decides,
+ * not an accident — and the kids skin still never shows functional text.
  */
 export const KID_MATERIALS = ["crayon", "marker", "brush", "fill", "eraser"] as const;
 export type KidMaterial = (typeof KID_MATERIALS)[number];

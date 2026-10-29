@@ -1,5 +1,5 @@
 // Gera `app/src/main/java/com/theomaria/draw/ui/PaletteCatalog.java` a partir
-// dos valores publicados do mockup (`.dev/investigations/mockup/mockup/src/mockup/palette.ts`).
+// dos valores publicados do mockup (`mockup/src/mockup/palette.ts`, na raiz do repositorio).
 //
 // Por que gerar em vez de calcular em runtime: o catalogo e dado estatico (18
 // familias x 11 degraus), e o app nao precisa carregar oklch nem uma tabela de
@@ -15,7 +15,7 @@ const here = dirname(fileURLToPath(import.meta.url));
 const root = resolve(here, "..", "..");
 const source =
   process.argv[2] ??
-  join(root, ".dev", "investigations", "mockup", "mockup", "src", "mockup", "palette.ts");
+  join(root, "mockup", "src", "mockup", "palette.ts");
 
 const text = readFileSync(source, "utf8");
 

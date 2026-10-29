@@ -23,7 +23,7 @@ dist/
 
 # Evidências e artefatos de verificação local
 **/.chrome-*/
-**/.dev-evidence/
+**/.evidence/
 **/.dev-artifacts/
 
 # Logs

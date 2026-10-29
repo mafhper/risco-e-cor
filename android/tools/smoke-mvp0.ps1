@@ -4,7 +4,7 @@
 #   powershell -ExecutionPolicy Bypass -File tools/smoke-mvp0.ps1
 #   powershell -ExecutionPolicy Bypass -File tools/smoke-mvp0.ps1 -SkipInstall
 #
-# Saida: .dev-evidence/ com capturas, badging, logcat e resumo.
+# Saida: .evidence/ com capturas, badging, logcat e resumo.
 
 param(
     [switch]$SkipInstall,
@@ -14,7 +14,7 @@ param(
 $ErrorActionPreference = "Stop"
 $here = Split-Path -Parent $MyInvocation.MyCommand.Path
 $root = Split-Path -Parent $here
-$evidence = Join-Path $root ".dev-evidence"
+$evidence = Join-Path $root ".evidence"
 New-Item -ItemType Directory -Force -Path $evidence | Out-Null
 
 # ---------------------------------------------------------------- ambiente ---

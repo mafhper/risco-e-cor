@@ -10,7 +10,7 @@ import java.util.zip.CRC32;
  * <p>O CRC32 cobre exatamente {@code "seq|region|colorHex"} (sem o separador final). Linha que nao
  * parseia ou cujo CRC falha e descartada — e assim que a linha truncada por kill e detectada.
  *
- * <p>Fonte: {@code .dev/plans/poc-a-implementacao.md} §4.4.
+ * <p>Fonte: a spec de implementacao do POC-A §4.4.
  */
 public final class JournalRecord {
 

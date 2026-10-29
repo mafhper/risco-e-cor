@@ -5,7 +5,7 @@ import java.util.Locale;
 /**
  * Metadado de uma regiao do mapa, derivado dos rotulos — nunca lido de um arquivo.
  *
- * <p>Fonte: {@code .dev/plans/poc-a-implementacao.md} §4.1 (formato do mapa) e §4.5 (algoritmo).
+ * <p>Fonte: a spec de implementacao do POC-A §4.1 (formato do mapa) e §4.5 (algoritmo).
  */
 public final class RegionInfo {
 

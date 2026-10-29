@@ -6,7 +6,7 @@ import java.util.List;
 
 /**
  * Especificacao de uma pagina sintetica. As duas paginas do POC-A estao aqui, com as geometrias
- * conferidas a mao no §5 de {@code .dev/plans/poc-a-implementacao.md}.
+ * conferidas a mao no §5 da spec de implementacao do POC-A.
  */
 public final class PageSpec {
 

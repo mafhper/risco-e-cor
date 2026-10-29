@@ -24,7 +24,7 @@ import java.util.Map;
  * pintado. E o que esconde a emenda sob o traco sem invadir a regiao vizinha: um pixel com
  * label &gt;= 2 nunca e escrito pela dilatacao.
  *
- * <p>Fonte: {@code .dev/plans/poc-a-implementacao.md} §4.5.
+ * <p>Fonte: a spec de implementacao do POC-A §4.5.
  */
 public final class FillEngine {
 

@@ -3,12 +3,12 @@
 #
 #   powershell -File tools/smoke-parity.ps1
 #
-# Saida em .dev-evidence/parity/ (capturas + ui-*.xml + relatorio.txt).
+# Saida em .evidence/parity/ (capturas + ui-*.xml + relatorio.txt).
 
 param(
     [string]$Sdk = "C:\Users\mafhper\Documents\Tools\android",
     [string]$Serial = "RFCN70CWW3J",
-    [string]$Out = ".dev-evidence\parity",
+    [string]$Out = ".evidence\parity",
     [switch]$SeedWall
 )
 

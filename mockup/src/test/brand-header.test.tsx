@@ -4,7 +4,7 @@
 //
 // The numbers here are the BRAND contract, not a reading of the code:
 // - "Risco e Cor" is the canonical spelling of the art set, and the symbol is
-//   never drawn below 16px (`.dev/img/brand/README.md` §"Arquivos").
+//   never drawn below 16px (brand asset notes, §"Arquivos").
 // - 27/10: the wordmark went 40 -> 32 and the symbol 28 -> 36 because the pair
 //   was disproportionate: the thin-line symbol had exactly the cap height of a
 //   heavy 40dp wordmark, and the 20dp action icons looked starved beside it.

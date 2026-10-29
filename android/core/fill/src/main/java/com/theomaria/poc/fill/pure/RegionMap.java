@@ -22,7 +22,7 @@ import java.util.Map;
  * <p>{@code 0} = contorno · {@code 1} = exterior · {@code 2..65534} = regiao.
  * Os rotulos sao guardados em {@code char[]} (16 bits sem sinal, 2 MiB em 1024x1024).
  *
- * <p>Fonte: {@code .dev/plans/poc-a-implementacao.md} §4.1. O plano original pedia PNG cinza
+ * <p>Fonte: a spec de implementacao do POC-A §4.1. O plano original pedia PNG cinza
  * 16 bits; a correcao D-A4 esta registrada na especificacao.
  */
 public final class RegionMap {

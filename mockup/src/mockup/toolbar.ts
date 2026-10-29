@@ -20,8 +20,8 @@ export const CHROME_CHIP_LIMIT = 5;
  */
 export function baseTools(kids: boolean): CanvasTool[] {
   // One source of truth for the kids set: the bar used to keep its own copy of
-  // the three-tool list and stayed behind when ADR-001 was amended (owner's
-  // report: "no modo compacto está travado o lápis").
+  // the three-tool list and stayed behind when the kids set grew to five
+  // (reported as "no modo compacto está travado o lápis").
   if (kids) return kidTools();
   return ["fill", "pencil", "brush", "marker", "eraser"];
 }

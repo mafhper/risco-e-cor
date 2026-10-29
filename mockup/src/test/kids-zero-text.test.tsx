@@ -133,8 +133,8 @@ describe("kids canvas: zero functional text in the whole screen", () => {
     );
     fireEvent.click(screen.getByLabelText("Abrir barra de ferramentas"));
     const compact = screen.getByTestId("canvas-compact");
-    // ADR-001 as amended (24/10): wax crayon, marker, brush, magic bucket and
-    // block eraser — all five reachable from the compact bar itself.
+    // The kids studio: wax crayon, marker, brush, magic bucket and block
+    // eraser — all five reachable from the compact bar itself.
     expect(within(compact).getByLabelText("Giz de cera")).toBeInTheDocument();
     expect(within(compact).getByLabelText("Pintar")).toBeInTheDocument();
     expect(within(compact).getByLabelText("Borracha")).toBeInTheDocument();

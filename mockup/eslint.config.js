@@ -6,11 +6,8 @@ import reactRefresh from "eslint-plugin-react-refresh";
 import tseslint from "typescript-eslint";
 
 export default tseslint.config(
-  // Generated evidence and deploy scaffolding are not app code: linting the
-  // copies inside .dev-artifacts would report the app twice. `.dev` is the
-  // private workspace — scratch scripts, snapshots and evidence live there and
-  // are not product code, so they are not linted either.
-  { ignores: ["dist", ".output", ".vinxi", ".wrangler", ".dev-artifacts", ".dev/**"] },
+  // Build output and deploy scaffolding are not app code.
+  { ignores: ["dist", ".output", ".vinxi", ".wrangler"] },
   {
     extends: [js.configs.recommended, ...tseslint.configs.recommended],
     files: ["**/*.{ts,tsx}"],

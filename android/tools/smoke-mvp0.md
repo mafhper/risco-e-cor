@@ -23,7 +23,7 @@ Passos provados:
 11. Estúdio kids: quatro ferramentas, seis cores de 56 dp, "Feito" só-ícone;
     voltar descarta a folha vazia e devolve ao perfil.
 
-Saída em `.dev-evidence/` (local, ignorado): `01..15-*.png`, `badging.txt`,
+Saída em `.evidence/` (local, ignorado): `01..15-*.png`, `badging.txt`,
 `install.txt`, `logcat.txt`, `summary.txt`, `EVIDENCE.md` e `smoke-console.txt`.
 
 O log `MeuDesenho` registra, por fill: rótulo, área, pixels pintados, retângulo

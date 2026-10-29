@@ -1,6 +1,6 @@
 // Seam: the family mode as a pure decision over the profile list (plus the
-// material contract of ADR-001). No DOM: this is the rule that decides whether
-// the Home is a chip row or a single hero, and whether a 3-5 child has three
+// kids material contract). No DOM: this is the rule that decides whether
+// the Home is a chip row or a single hero, and whether a 3-5 child has five
 // materials or nine.
 import { describe, expect, it } from "vitest";
 import { KID_MATERIALS, kidTools } from "@/mockup/capabilities";
@@ -28,7 +28,7 @@ const p = (id: string, order: number, archived = false): Profile =>
     archived,
   }) as Profile;
 
-describe("ADR-001 as amended (24/10): the 3-5 studio is five tools", () => {
+describe("the 3-5 studio is five tools", () => {
   it("adds two drawing materials to the three named objects", () => {
     expect(KID_MATERIALS).toEqual(["crayon", "marker", "brush", "fill", "eraser"]);
   });

@@ -4,7 +4,7 @@
 #
 # Entradas:
 #   app/build/evidence/mockup/0N-*.png   (390x844, 1 px = 1 dp)
-#   .dev-evidence/parity/0N-*.png        (tela nativa, 1170x2532 = 390x844 dp)
+#   .evidence/parity/0N-*.png            (tela nativa, 1170x2532 = 390x844 dp)
 # Saidas:
 #   app/build/evidence/compare/0N-*.png  (mockup | app, 788x844)
 #   app/build/evidence/compare/tokens.txt
@@ -14,7 +14,7 @@
 
 param(
     [string]$Mockup = "app\build\evidence\mockup",
-    [string]$App = ".dev-evidence\parity",
+    [string]$App = ".evidence\parity",
     [string]$Out = "app\build\evidence\compare"
 )
 

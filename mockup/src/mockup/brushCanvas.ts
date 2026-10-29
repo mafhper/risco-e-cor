@@ -634,10 +634,10 @@ const PROFILES: Record<RasterBrush, MaterialProfile> = {
 /**
  * THE ENDS — the material's signature where the hand lands and where it lifts.
  *
- * The bench at 40× (`.dev/investigations/mockup/bancada/crop-40.png`) showed the
+ * The bench at 40× (a measured crop of the nine samples) showed the
  * nine samples as ONE shape: a leaf. Both tips narrowed and the widest point was
  * the middle, because a single `envelopeAt` tapered every material over the same
- * 15% of the length. The plates the owner gave (`.dev/img/brush-tunnig/`) show
+ * 15% of the length. The reference plates the owner gave show
  * the opposite: PARALLEL SIDES, and a finish that belongs to the medium — a
  * pencil lifts off the paper, charcoal crumbles, a wash blooms, a marker stops
  * dead. That is the largest distance between our stroke and the real one, so the
@@ -1125,8 +1125,8 @@ function stampedOf(stroke: StampSource): Stamped {
       const bodyY = dot || phase === 0 ? cy : y0 + (y1 - y0) * (t / seg);
       /**
        * Where this mark sits on the stroke. Outside the ends' zones the material
-       * keeps the authored width — parallel sides, the way the plates in
-       * `.dev/img/brush-tunnig/` read — and inside a zone the finish takes over
+       * keeps the authored width — parallel sides, the way the reference
+       * plates read — and inside a zone the finish takes over
        * (`ENDS`). The paste (ink) is read from the SAME `length`, so a pool and
        * a paste never disagree about which end they are on.
        */

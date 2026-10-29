@@ -1474,8 +1474,8 @@ export function CanvasScreen({ artworkId, back }: { artworkId: string; back: Scr
     go(back.name === "view" ? back.back : back);
   };
 
-  // ADR-001 as amended (24/10): 3–5 carries five objects — and the bucket is one
-  // of them, on a page or on a blank sheet (it paints the paper itself).
+  // The 3–5 studio carries five objects — and the bucket is one of them, on a
+  // page or on a blank sheet (it paints the paper itself).
   // Nothing the profile cannot use is rendered: no padlock, no locked door.
   //
   // The compact bar carries the base set on kids (five) and the profile's own

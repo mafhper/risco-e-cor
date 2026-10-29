@@ -187,8 +187,9 @@ describe("the material pop: only painting material", () => {
     const names = within(pop)
       .getAllByRole("button")
       .map((cell) => cell.getAttribute("aria-label"));
-    // Três materiais na faixa de três. O balde e a borracha continuam
-    // existindo na BARRA da faixa; não são material e não se repetem aqui.
+    // Três materiais de DESENHO na faixa (giz, marcador, pincel). O balde e a
+    // borracha continuam existindo na BARRA da faixa; não são material de
+    // desenho e não se repetem aqui.
     expect(names).toEqual(["Giz de cera", "Marcador", "Pincel"]);
     expect(names).toHaveLength(3);
     expect(pop.querySelector('[data-tool="fill"]')).toBeNull();

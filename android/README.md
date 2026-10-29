@@ -119,7 +119,7 @@ powershell -ExecutionPolicy Bypass -File tools/smoke-mvp0.ps1
 O script instala, limpa os dados, percorre o fluxo por `content-desc` (sem
 coordenada fixa de botão), localiza o papel na captura para tocar nas regiões
 reais, confere `leaks=0` no logcat e grava capturas, log e um resumo em
-`.dev-evidence/` (pasta local, ignorada pelo controle de versão). O passo a
+`.evidence/` (pasta local, ignorada pelo controle de versão). O passo a
 passo está em `tools/smoke-mvp0.md`.
 
 ## Arquitetura em uma tela

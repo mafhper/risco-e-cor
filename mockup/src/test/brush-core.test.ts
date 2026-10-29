@@ -10,7 +10,7 @@
 // depositavam uma NUVEM. O leito espalhava um dab por passo por ±0,4 do tamanho,
 // e a partícula tem metade de ~0,1: no meio da faixa, menos de um carimbo cobria
 // um ponto e a soma de alfa ficava em ~0,06. Faltava o núcleo contínuo por baixo
-// da textura (pranchas do dono em `.dev/img/brush-tunnig/`, `tecnica.md`).
+// da textura (pranchas de referencia do dono, `tecnica.md`).
 //
 // O piso de cada material vem da prancha, não da implementação: grafite lê uma
 // linha clara e contínua, carvão um corpo roto quase preto, giz uma banda sólida

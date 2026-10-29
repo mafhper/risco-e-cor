@@ -72,8 +72,8 @@ describe("F6 — the sample stroke differentiates by geometry", () => {
 
   it("draws the object alone — no stroke sample crossing it", () => {
     // Owner's call (24/10): the sample crossed the crayon and turned it into a
-    // scribble. With three materials there is nothing to compare, so the card
-    // carries the object only.
+    // scribble. With the band's few materials there is nothing to compare, so
+    // the card carries the object only.
     for (const kind of SIX) {
       const glyph = glyphFor(kind);
       expect(glyph.querySelector('[data-kid-part="trace"]'), kind).toBeNull();
@@ -82,7 +82,7 @@ describe("F6 — the sample stroke differentiates by geometry", () => {
 });
 
 describe("F7 — the spec adopts the crayon, so K7 is verifiable", () => {
-  it("ships a wax crayon (ADR-001) and no chalk material", () => {
+  it("ships a wax crayon and no chalk material", () => {
     expect(shelfBrushOf("crayon")?.label).toBe("Giz de cera");
     expect(BRUSH_SHELF.some((b) => b.id === ("chalk" as string))).toBe(false);
     // The crayon's dash is the one the spec aligned to, live in the model.

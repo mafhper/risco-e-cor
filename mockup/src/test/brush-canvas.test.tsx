@@ -288,7 +288,7 @@ describe("brush canvas: the flat tip is a ruler, the round tip breathes", () => 
 });
 
 describe("brush canvas: the band is parallel, and each material ends its own way", () => {
-  // The plates in `.dev/img/brush-tunnig/` show PARALLEL sides and a finish that
+  // The reference plates show PARALLEL sides and a finish that
   // belongs to the medium. The bench at 40× showed the nine samples as ONE shape:
   // a leaf, because a single shared envelope tapered every tip over 15% of the
   // length. Two statements keep the leaf from coming back — the band does not

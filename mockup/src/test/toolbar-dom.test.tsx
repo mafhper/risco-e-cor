@@ -123,7 +123,7 @@ describe("no blocked doors: the bar only shows what can be used", () => {
     expect(compact.textContent?.trim() ?? "").toBe("");
   });
 
-  it("keeps the same three materials on a page, still with no padlock", () => {
+  it("keeps the same materials on a page, still with no padlock", () => {
     mount("theo", "foguete");
     fireEvent.click(screen.getByLabelText("Abrir barra de ferramentas"));
     const compact = screen.getByTestId("canvas-compact");
