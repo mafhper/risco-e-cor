@@ -4,16 +4,11 @@ App Android de desenho e colorir para crianças, feito para funcionar offline.
 
 ## Estado
 
-Pré-MVP. O projeto está em desenvolvimento e reúne duas partes:
+Pré-MVP. O projeto está em desenvolvimento e ainda não está pronto para uso.
 
-- `android/` — o app Android.
-- `mockup/` — um protótipo web, usado para explorar a interface antes de levar as telas para o app.
-
-Nenhuma das duas partes está pronta para uso.
+O repositório contém o app Android, em `android/`.
 
 ## Como rodar
-
-### `android/`
 
 Requer JDK e Android SDK configurados na máquina.
 
@@ -23,18 +18,6 @@ gradlew.bat assembleDebug
 ```
 
 O APK de debug sai dentro da pasta de build do módulo.
-
-### `mockup/`
-
-Requer Node.js com `npm`.
-
-```bash
-cd mockup
-npm ci
-npm run dev
-```
-
-O endereço local aparece no terminal quando o servidor de desenvolvimento sobe.
 
 ## Aviso
 

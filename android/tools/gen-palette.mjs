@@ -1,21 +1,25 @@
 // Gera `app/src/main/java/com/theomaria/draw/ui/PaletteCatalog.java` a partir
-// dos valores publicados do mockup (`mockup/src/mockup/palette.ts`, na raiz do repositorio).
+// dos valores do protótipo (`palette.ts`, informado por argumento — o protótipo
+// mora fora do repositório, então o caminho não tem padrão).
 //
 // Por que gerar em vez de calcular em runtime: o catalogo e dado estatico (18
 // familias x 11 degraus), e o app nao precisa carregar oklch nem uma tabela de
-// nomes em tempo de execucao. O mockup continua sendo a fonte; este script so
+// nomes em tempo de execucao. O protótipo continua sendo a fonte; este script só
 // transpila os mesmos numeros, com as mesmas regras de nome.
 //
-// Uso: node tools/gen-palette.mjs [caminho-da-palette.ts]
+// Uso: node tools/gen-palette.mjs <caminho-do-palette.ts>
 import { readFileSync, writeFileSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const here = dirname(fileURLToPath(import.meta.url));
 const root = resolve(here, "..", "..");
-const source =
-  process.argv[2] ??
-  join(root, "mockup", "src", "mockup", "palette.ts");
+
+const source = process.argv[2];
+if (!source) {
+  console.error("uso: node tools/gen-palette.mjs <caminho-do-palette.ts>");
+  process.exit(1);
+}
 
 const text = readFileSync(source, "utf8");
 
@@ -149,7 +153,7 @@ lines.push("");
 lines.push("/**");
 lines.push(" * Catalogo de cores do atelie: 18 familias (15 cromaticas + 3 neutras) x 11");
 lines.push(" * degraus (50..950), mais preto e branco. Arquivo GERADO por");
-lines.push(" * `tools/gen-palette.mjs` a partir de `src/mockup/palette.ts` do mockup —");
+lines.push(" * `tools/gen-palette.mjs` a partir do `palette.ts` do protótipo —");
 lines.push(" * nao editar a mao: rode o script e o diff mostra o que mudou.");
 lines.push(" *");
 lines.push(" * <p>Os degraus sao os ramps publicados do Tailwind v4 em oklch, convertidos");

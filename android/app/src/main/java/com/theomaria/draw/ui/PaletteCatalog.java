@@ -3,7 +3,7 @@ package com.theomaria.draw.ui;
 /**
  * Catalogo de cores do atelie: 18 familias (15 cromaticas + 3 neutras) x 11
  * degraus (50..950), mais preto e branco. Arquivo GERADO por
- * `tools/gen-palette.mjs` a partir de `src/mockup/palette.ts` do mockup —
+ * `tools/gen-palette.mjs` a partir do `palette.ts` do protótipo —
  * nao editar a mao: rode o script e o diff mostra o que mudou.
  *
  * <p>Os degraus sao os ramps publicados do Tailwind v4 em oklch, convertidos
